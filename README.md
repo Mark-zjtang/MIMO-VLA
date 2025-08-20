@@ -1,6 +1,6 @@
 VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Making (also termed MIMO-VLA)
 ======
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md) ![example](https://img.shields.io/badge/Logitech-G29-yellow.svg)![Apache 2.0 License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md) ![Apache 2.0 License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
 ## :fire: Overview of the MIMO-VLA (Finding our [paper](https://arxiv.org/abs/2401.11792)) 
 ![images](mimo_vla_framework.png)
 In this study, we explore how to develop a multimodal pre-training framework to address the inherent task mutual exclusion in MISO architectures during MIMO scenarios (e.g., parallel multi-tasks output processing), where competing conflicts arise among different tasks sharing output channels, leading to imbalanced model optimization and significant performance degradation in specific tasks. we propose a unified MIMO training architecture with parallel multi-task output capabilities—the Visual Language Action Model for Simultaneously Chatting and Decision Making. We refer to this method as VLASCD or MIMO-VLA, and in the following, we will use these two names interchangeably. Experiments show that MIMO-VLA surpasses state-of-the-art VLA models, RL, and decision transformers in decision-making while maintaining fluent dialogue, thanks to our continuous-action handling, cost function design, and label smoothing techniques.
@@ -8,10 +8,10 @@ In this study, we explore how to develop a multimodal pre-training framework to 
 ## 1.Installation  environment
 
 * Run following command
-
-`$ conda env create -f mimovla.yaml` 
-
-`$ source activate mimovla`
+* 
+    `$ conda env create -f mimovla.yaml`
+  
+    `$ source activate mimovla`
 
 If bitsandbytes doesn't work, [install it from source.](https://github.com/TimDettmers/bitsandbytes/blob/main/compile_from_source.md) Windows users can follow [these instructions](https://github.com/tloen/alpaca-lora/issues/17).
 
