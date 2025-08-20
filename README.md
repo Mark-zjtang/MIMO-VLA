@@ -28,8 +28,11 @@ If bitsandbytes doesn't work, [install it from source.](https://github.com/TimDe
 ## 4.Training & Finetuning 
 
 * You can run `python finetune_mimovla_training.py  --base_model --data_path llama-7b-hf --batch_size  --prompt_temples --cutoff_len --lora_r --lora_alpha --input_types --is_multi_frames --is_reconstruction `
+  
 * `--base_model` In this work, our base model shares the same weights as [alpaca-lora](https://github.com/tloen/alpaca-lora?tab=readme-ov-file) . This file reads the foundation model from the Hugging Face model hub and the LoRA weights from [tloen/alpaca-lora-7b](https://huggingface.co/tloen/alpaca-lora-7b).
+  
 * `--data_path` you can used `MIMO_VLA_training_datasets.pkl`
+  
 * `--prompt_temples` The current code uses `templates/alpaca.json`, which is our modified version. If you want to use the original template, you can refer to `alpaca.json` in alpaca-lora.
 
 ## 5.Evaluating chatting and decision-making 
@@ -57,7 +60,7 @@ If bitsandbytes doesn't work, [install it from source.](https://github.com/TimDe
 Our code is mainly based on [alpaca-lora](https://github.com/tloen/alpaca-lora?tab=readme-ov-file) and [EGADS](https://github.com/Mark-zjtang/EGADS), to which we express our gratitude.
 
 ## 7.References
-If you find this open source or paper release useful, please reference in your paper:
+* If you find this open source or paper release useful, please reference in your paper:
 ```
 @article{tang2024build,
   title={VLASCD:A Visual Language Action Model for Simultaneous Chatting and Decision Making},
