@@ -41,7 +41,7 @@ If bitsandbytes doesn't work, [install it from source.](https://github.com/TimDe
 * An NVIDIA V100 GPU, python 3.8.3
 * Based on Ubuntu 18.04 or 20.04
 
-    `$ cd $yourfolder$/gym-carla-master`
+    `$ cd gym-carla-master`
 
     `$ pip install -r requirements.txt`
 
