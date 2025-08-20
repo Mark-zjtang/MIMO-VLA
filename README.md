@@ -16,16 +16,11 @@ VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Ma
 
 If bitsandbytes doesn't work, [install it from source.](https://github.com/TimDettmers/bitsandbytes/blob/main/compile_from_source.md) Windows users can follow [these instructions](https://github.com/tloen/alpaca-lora/issues/17).
 
-## 2.Usage
-* Enter the CARLA root folder and launch the CARLA server by:
-    `$ ./CarlaUE4.sh -opengl -carla-port=2000`
-* You also have the option to modify other configuration parameters of the environment in the `env_carla_obschannel.py` file.
-
-## 3.Datasets
+## 2.Datasets
 * You can run `python datasets/collect_mimovla_training_datasets.py` by using `collect_mimovla_training_datasets.pkl`（The training datasests was obtained from the [EGADS](https://github.com/Mark-zjtang/EGADS) framework, which designs RL and IL-based agent with safety constraints, demonstrating excellent performance in CARLA). You may also modify the templates for the questions and sensor inputs based on this file.
 * After that you will get a training dataset termed `MIMO_VLA_training_datasets.pkl`
   
-## 4.Training & Finetuning 
+## 3.Training & Finetuning 
 
 * You can run `python finetune_mimovla_training.py  --base_model --data_path llama-7b-hf --batch_size  --prompt_temples --cutoff_len --lora_r --lora_alpha --input_types --is_multi_frames --is_reconstruction `
   
@@ -35,7 +30,7 @@ If bitsandbytes doesn't work, [install it from source.](https://github.com/TimDe
   
 * `--prompt_temples` The current code uses `templates/alpaca.json`, which is our modified version. If you want to use the original template, you can refer to `alpaca.json` in alpaca-lora.
 
-## 5.Evaluating chatting and decision-making 
+## 4.Evaluating chatting and decision-making 
 
 * Running it `python generate_chatting_decision.py --lora_weights --prompt_temples --seed --env --input_names --max_episode_length --action_repeat --episodes --carla_port --town`
 * Please note that we collect the set of questions generated from the evaluation of the above-mentioned MIMO-VLA or other models, and submit them to ChatGPT-4o with the following prompt:
@@ -53,13 +48,17 @@ If bitsandbytes doesn't work, [install it from source.](https://github.com/TimDe
 
 * Download  [CARLA_0.9.10](https://github.com/carla-simulator/carla/releases)
 
+* Enter the CARLA root folder and launch the CARLA server by:
+    `$ ./CarlaUE4.sh -opengl -carla-port=2000`
+* You also have the option to modify other configuration parameters of the environment in the `env_carla_obschannel.py` file.
+
     `$ export PYTHONPATH=$PYTHONPATH:$YourFolder$/CARLA_0.9.10/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg`
 * For the evaluation of decision making, we perform real-time inference directly in CARLA. Since two modalities are output simultaneously and the generation of language is relatively slower, the evaluation of decisions is also correspondingly delayed. This issue of inference latency has not yet been addressed in our paper, and we plan to improve and optimize it in future work.
 
-## 6.Acknowledgement
+## 5.Acknowledgement
 * Our code is mainly based on [alpaca-lora](https://github.com/tloen/alpaca-lora?tab=readme-ov-file) and [EGADS](https://github.com/Mark-zjtang/EGADS), to which we express our gratitude.
 
-## 7.References
+## 6.References
 * If you find this open source or paper release useful, please reference in your paper:
 ```
 @article{tang2024build,
