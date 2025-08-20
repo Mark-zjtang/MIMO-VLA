@@ -52,7 +52,7 @@ If bitsandbytes doesn't work, [install it from source.](https://github.com/TimDe
     `$ export PYTHONPATH=$PYTHONPATH:$YourFolder$/CARLA_0.9.10/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg`
 * For the evaluation of decision making, we perform real-time inference directly in CARLA. Since two modalities are output simultaneously and the generation of language is relatively slower, the evaluation of decisions is also correspondingly delayed. This issue of inference latency has not yet been addressed in our paper, and we plan to improve and optimize it in future work.
 
-## 6.Acknowledge
+## 6.Acknowledgement
 Our code is mainly based on [alpaca-lora](https://github.com/tloen/alpaca-lora?tab=readme-ov-file) and [EGADS](https://github.com/Mark-zjtang/EGADS), to which we express our gratitude.
 
 ## 7.References
