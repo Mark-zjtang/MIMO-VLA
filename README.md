@@ -10,7 +10,7 @@ VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Ma
 
 * Run following command
 * 
-    `$ conda env create -f mimovla.yaml`
+    `$ conda env create -f mimovla.yml`
   
     `$ source activate mimovla`
 
