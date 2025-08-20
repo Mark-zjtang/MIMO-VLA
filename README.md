@@ -60,7 +60,7 @@ Our code is mainly based on [alpaca-lora](https://github.com/tloen/alpaca-lora?t
 If you find this open source or paper release useful, please reference in your paper:
 ```
 @article{tang2024build,
-  title={VLASCD:AVisual Language Action Model for Simultaneous Chatting and Decision Making},
+  title={VLASCD:A Visual Language Action Model for Simultaneous Chatting and Decision Making},
   author={Tang, Zuojin and Hu, Bin and Zhao, Chenyang and Ma, De and Pan, Gang and Liu, Bin},
   journal={arXiv preprint arXiv:2410.15885},
   year={2024}
