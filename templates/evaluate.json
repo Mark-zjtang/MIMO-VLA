@@ -1,0 +1,6 @@
+{
+    "description": "You, the driving expert, are now driving a car. You can observe a lof of vehicles around. your goal at all times is to keep the vehicle safe,First of all. You need to be able to form without colliding with any vehicle and not deviate far from your own driving path\\uff0eThe current scene is very similar to the scene of the previous frame in the episode, so the historical information of the previous frame is of great significance for your current decision reference, and you need to combine the information on this continuous trajectory to make decisions.\"\n    # input_test = \"At the current moment: within a radius of 15m that you can perceive, you can see that there is 0 cars. You are now -0.2m laterally away from your own driving route, your yaw Angle throughout the driving environment is 0.81\\u00b0 and your speed is 3.84m/s."
+    "prompt_input": "Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.\n\n### Instruction:\n{instruction}\n\n### Input:\n{input}\n\n### Response:\n",
+    "prompt_no_input": "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n\n### Instruction:\n{instruction}\n\n### Response:\n",
+    "response_split": "### Response:"    
+}

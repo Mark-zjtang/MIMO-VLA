@@ -1,0 +1,7 @@
+{
+    "description": "Template used by Alpaca-LoRA.",
+    "prompt_input": "Below is an input that describes an autonmous driving task, paired with an question that provides further context. Write a answer that appropriately completes the question.\n\n### input:\n{input}\n\n### question:\n{question}\n\n### answer:\n ",
+    "prompt_no_input": "Below is an input that describes a task. Write a answer that appropriately based on the input. \n\n### input:\n{input}\n\n### answer:\n",
+    "response_split": "### Response:"    
+}
+
