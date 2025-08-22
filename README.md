@@ -64,10 +64,13 @@ If bitsandbytes doesn't work, [install it from source.](https://github.com/TimDe
 ## 6.References
 * If you find this open source or paper release useful, please reference in your paper:
 ```
-@article{tang2024vlascd,
-  title={VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Making},
-  author={Tang, Zuojin and Hu, Bin and Zhao, Chenyang and Ma, De and Pan, Gang and Liu, Bin},
-  journal={arXiv preprint arXiv:2410.15885},
-  year={2024}
+@misc{tang2025vlascdvisuallanguageaction,
+      title={VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Making}, 
+      author={Zuojin Tang and Bin Hu and Chenyang Zhao and De Ma and Gang Pan and Bin Liu},
+      year={2025},
+      eprint={2410.15885},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2410.15885}, 
 }
 ```
