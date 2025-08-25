@@ -1,6 +1,6 @@
 VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Making (also termed MIMO-VLA) 
 ======
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)![Apache 2.0 License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)![Apache 2.0 License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
 
 ## :fire::fire::fire: MIMO-VLA has been accepted by EMNLP 2025 (Main Conference)
 
