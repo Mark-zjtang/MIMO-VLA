@@ -4,7 +4,7 @@ VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Ma
 
 ## :fire::fire::fire: MIMO-VLA has been accepted by EMNLP 2025 (Main Conference)
 
-## 🏷️ Overview of the MIMO-VLA (Finding our [paper](https://arxiv.org/abs/2410.15885)) 
+## 🏷️ Overview of the MIMO-VLA (see details in our [paper](https://arxiv.org/abs/2410.15885)) 
 ![images](mimo_vla_framework.png)
 
 *In this study, we explore how to develop a multimodal pre-training framework to address the inherent task mutual exclusion in MISO architectures during MIMO scenarios (e.g., parallel multi-tasks output processing), where competing conflicts arise among different tasks sharing output channels, leading to imbalanced model optimization and significant performance degradation in specific tasks. we propose a unified MIMO training architecture with parallel multi-task output capabilities—the Visual Language Action Model for Simultaneously Chatting and Decision Making. We refer to this method as VLASCD or MIMO-VLA, and in the following, we will use these two names interchangeably. Experiments show that MIMO-VLA surpasses state-of-the-art VLA models, RL, and decision transformers in decision-making while maintaining fluent dialogue, thanks to our continuous-action handling, cost function design, and label smoothing techniques.*
@@ -62,7 +62,7 @@ If bitsandbytes doesn't work, [install it from source.](https://github.com/TimDe
 * Our code is mainly based on [alpaca-lora](https://github.com/tloen/alpaca-lora?tab=readme-ov-file) and [EGADS](https://github.com/Mark-zjtang/EGADS), to which we express our gratitude.
 
 ## 6.References
-* If you find this open source or paper release useful, please reference in your paper:
+* If you find this open source or paper release useful, please cite it in your paper:
 ```
 @misc{tang2025vlascdvisuallanguageaction,
       title={VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Making}, 
